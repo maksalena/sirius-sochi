@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>данные по клику на изображении</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange1">
+        <p>Значение: <span id="demo1"></span></p>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
+        <p>Значение: <span id="demo2"></span></p>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange3">
+        <p>Значение: <span id="demo3"></span></p>
+      </div>
+      <h2>Итог: <span id="res"></span></h2>
+        <h1>Данные по клику на изображении</h1>
+        <section>
+            <select class="selector"></select>
+        </section>
+        <section>
+            <div class="object-info">
+                <img class="image-out" src="images/1.png" alt="">
+                <h3 class="obj-name"></h3>
+                <p class="obj-type"></p>
+                <p class="obj-loc"></p>
+            </div>
+        </section>
+
+
+    </div>
+    <script src="info.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
