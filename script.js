@@ -1,8 +1,9 @@
 const selector = document.querySelector('.selector');
 const imageOut = document.querySelector('.image-out');
 const objectName = document.querySelector('.obj-name');
-const objectType = document.querySelector('.obj-type');
-const objectLoc = document.querySelector('.obj-loc');
+const objectE = document.querySelector('.obj-e');
+const objectS = document.querySelector('.obj-s');
+const objectG = document.querySelector('.obj-g');
 
 for (let key in objects) {
     let option = document.createElement('option');
@@ -21,8 +22,9 @@ function changeImg(elem) {
       return true;
   }
   objectName.textContent = objects[key]['name'];
-  objectType.textContent = objects[key]['type'];
-  objectLoc.textContent = objects[key]['location'];
+  objectE.textContent = objects[key]['E'];
+  objectS.textContent = objects[key]['S'];
+  objectG.textContent = objects[key]['G'];
 }
 
 
@@ -52,4 +54,8 @@ slider2.oninput = function() {
 slider3.oninput = function() {
     output3.innerHTML = this.value;
     result.innerHTML = Number(slider1.value) + Number(slider2.value) + Number(slider3.value);
+}
+
+function myScript(){
+   // код скрипта
 }

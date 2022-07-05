@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>данные по клику на изображении</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script> -->
 </head>
 
 <body>
@@ -31,11 +33,13 @@
             <div class="object-info">
                 <img class="image-out" src="images/1.png" alt="">
                 <h3 class="obj-name"></h3>
-                <p class="obj-type"></p>
-                <p class="obj-loc"></p>
+                <p>E: <span class="obj-e"></span></p>
+                <p>S: <span class="obj-s"></span></p>
+                <p>G: <span class="obj-g"></span></p>
             </div>
         </section>
 
+      <button onClick="myScript()">Старт</button>
 
     </div>
     <script src="info.js"></script>

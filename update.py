@@ -13,7 +13,7 @@ while True:
     print('Изменить - 1, Добавить новый объект - 2, Выход - 0')
     t = int(input())
     if t == 0:
-        webbrowser.open('https://maksalena.github.io/sirius/', new=0)
+        webbrowser.open('file:///Users/alenamaksimova/Desktop/sirius/index.html', new=0)
         sys.exit()
         
     if t == 1:
@@ -36,14 +36,14 @@ while True:
             if num == '0':
                 sys.exit()       
                
-        print('Введите первый параметр')
-        name = input()
-        print('Введите второй параметр')
-        tp = input()
-        print('Введите тритий параметр')
-        loc = input()
+        print('Введите E объекта')
+        e = input()
+        print('Введите S объекта')
+        s = input()
+        print('Введите G объекта')
+        g = input()
         
-        new = '"'+ num + '"' + ':{"name":' + "'" + name + "'," + '"type":' + "'" + tp + "'," + '"location":' + "'" + loc + "',},\n}"
+        new = '"'+ num + '"' + ':{"name":' + "'" + num + "'," + '"E":' + "'" + e + "'," + '"S":' + "'" + s + "'," + '"G":' + "'" + g + "',},\n}"
         with open('info.js', 'r+') as f:
             f.seek(0, 2)
             f.seek(f.tell() - 2, os.SEEK_SET)
