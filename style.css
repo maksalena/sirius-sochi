@@ -145,3 +145,27 @@ img:hover {
     background: #4CAF50;
     cursor: pointer;
 }
+
+.your__station {
+  display: flex;
+  justify-content: space-start;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+}
+
+.text {
+  padding-left: 15px;
+}

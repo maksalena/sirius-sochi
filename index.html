@@ -12,34 +12,57 @@
 
 <body>
     <div class="container">
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange1">
-        <p>Значение: <span id="demo1"></span></p>
+      <h1>Создайте свою идеальную станцию</h1>
+      <div class="your__station">
+        <div class="sliders">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange1">
+            <p>Значение: <span id="demo1"></span></p>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
+            <p>Значение: <span id="demo2"></span></p>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange3">
+            <p>Значение: <span id="demo3"></span></p>
+          </div>
+          <h2>ESG: <span id="res"></span></h2>
+        </div>
+        <div class="checkboxes">
+          <div class="checkbox">
+            <input type="checkbox" onclick="check1()" id="ch1"> <label for="ch1" class="text"> Чекбокс1 </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" onclick="check2()" id="ch2"> <label for="ch2" class="text"> Чекбокс2 </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" onclick="check3()" id="ch3"> <label for="ch3" class="text"> Чекбокс3 </label>
+          </div>
+        </div>
       </div>
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
-        <p>Значение: <span id="demo2"></span></p>
-      </div>
-      <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange3">
-        <p>Значение: <span id="demo3"></span></p>
-      </div>
-      <h2>Итог: <span id="res"></span></h2>
+
         <h1>Данные по клику на изображении</h1>
         <section>
+          <h3>Список объектов</h3>
             <select class="selector"></select>
         </section>
         <section>
             <div class="object-info">
                 <img class="image-out" src="images/1.png" alt="">
                 <h3 class="obj-name"></h3>
-                <p>E: <span class="obj-e"></span></p>
-                <p>S: <span class="obj-s"></span></p>
-                <p>G: <span class="obj-g"></span></p>
+                <p>E: <span class="obj-e">Выберите объект</span></p>
+                <p>S: <span class="obj-s">Выберите объект</span></p>
+                <p>G: <span class="obj-g">Выберите объект</span></p>
             </div>
         </section>
-
-      <button onClick="myScript()">Старт</button>
+        <section>
+          <div class="object-solution">
+            <button class="obj-eu" onClick="changeE()">-</button>
+            <button class="obj-su" onClick="changeS()">-</button>
+            <button class="obj-gu" onClick="changeG()">-</button>
+          </div>
+        </section>
 
     </div>
     <script src="info.js"></script>

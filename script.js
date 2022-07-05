@@ -4,6 +4,9 @@ const objectName = document.querySelector('.obj-name');
 const objectE = document.querySelector('.obj-e');
 const objectS = document.querySelector('.obj-s');
 const objectG = document.querySelector('.obj-g');
+const objEUpgrade = document.querySelector('.obj-eu');
+const objSUpgrade = document.querySelector('.obj-su');
+const objGUpgrade = document.querySelector('.obj-gu');
 
 for (let key in objects) {
     let option = document.createElement('option');
@@ -25,6 +28,10 @@ function changeImg(elem) {
   objectE.textContent = objects[key]['E'];
   objectS.textContent = objects[key]['S'];
   objectG.textContent = objects[key]['G'];
+
+  objEUpgrade.textContent = objects[key]['EUp'];
+  objSUpgrade.textContent = objects[key]['SUp'];
+  objGUpgrade.textContent = objects[key]['GUp'];
 }
 
 
@@ -56,6 +63,46 @@ slider3.oninput = function() {
     result.innerHTML = Number(slider1.value) + Number(slider2.value) + Number(slider3.value);
 }
 
-function myScript(){
+function myScript() {
    // код скрипта
+}
+
+function changeE() {
+  objectE.innerHTML = Number(objectE.textContent) + 10;
+  objectG.innerHTML = Number(objectE.textContent) - 5;
+}
+
+function changeS() {
+  objectS.innerHTML = Number(objectE.textContent) + 10;
+  objectG.innerHTML = Number(objectE.textContent) + 5;
+}
+
+function changeG() {
+  objectE.innerHTML = Number(objectE.textContent) - 10;
+  objectS.innerHTML = Number(objectE.textContent) + 5;
+  console.log("press");
+}
+
+function check1() {
+  if (ch1.checked) {
+    result.innerHTML = Number(result.textContent) + 10;
+  } else {
+    result.innerHTML = Number(result.textContent) - 10;
+  }
+}
+
+function check2() {
+  if (ch2.checked) {
+    result.innerHTML = Number(result.textContent) + 20;
+  } else {
+    result.innerHTML = Number(result.textContent) - 20;
+  }
+}
+
+function check3() {
+  if (ch3.checked) {
+    result.innerHTML = Number(result.textContent) + 30;
+  } else {
+    result.innerHTML = Number(result.textContent) - 30;
+  }
 }
