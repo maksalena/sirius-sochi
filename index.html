@@ -47,23 +47,32 @@
           <h3>Список объектов</h3>
             <select class="selector"></select>
         </section>
-        <section>
-            <div class="object-info">
-                <img class="image-out" src="images/1.png" alt="">
-                <h3 class="obj-name"></h3>
-                <p>E: <span class="obj-e">Выберите объект</span></p>
-                <p>S: <span class="obj-s">Выберите объект</span></p>
-                <p>G: <span class="obj-g">Выберите объект</span></p>
-            </div>
-        </section>
-        <section>
-          <div class="object-solution">
-            <button class="obj-eu" onClick="changeE()">-</button>
-            <button class="obj-su" onClick="changeS()">-</button>
-            <button class="obj-gu" onClick="changeG()">-</button>
-          </div>
-        </section>
-
+        <div class="pick__station">
+          <section>
+              <div class="object-info">
+                  <img class="image-out" src="images/1.png" alt="">
+                  <h3 class="obj-name"></h3>
+                  <div class="obj-par">
+                    <div class="par">
+                      <p>E: <span class="obj-e">Выберите объект</span></p>
+                      <p class="pad">S: <span class="obj-s">Выберите объект</span></p>
+                      <p>G: <span class="obj-g">Выберите объект</span></p>
+                    </div>
+                    <div class="but">
+                      <div width="90px" class="e-solution">
+                        <button class="obj-eu" onClick="changeE()">-</button>
+                      </div>
+                      <div class="s-solution">
+                        <button class="obj-su" onClick="changeS()">-</button>
+                      </div>
+                      <div class="g-solution">
+                        <button class="obj-gu" onClick="changeG()">-</button>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        </div>
     </div>
     <script src="info.js"></script>
     <script src="script.js"></script>

@@ -35,12 +35,20 @@ section {
     margin-bottom: 30px;
 }
 
-input, button, select, textarea {
+input, select, textarea {
     background: none;
     border: 1px solid black;
     padding: 10px 20px;
     font-size: .9rem;
     outline: none;
+}
+
+button {
+  background: none;
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-size: .9rem;
+  outline: none;
 }
 
 input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus {
@@ -102,11 +110,6 @@ img {
   padding: 10px 20px;
 }
 
-img:hover {
-    cursor: pointer;
-}
-
-
 .slidecontainer {
     width: 200px; /* Width of the outside container */
 }
@@ -151,6 +154,26 @@ img:hover {
   justify-content: space-start;
   flex-direction: row;
   padding-bottom: 50px;
+}
+
+.obj-par {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.but {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.s-solution {
+  margin: 20px 0;
+}
+
+.pad {
+  margin: 40px 0;
 }
 
 .checkboxes {
